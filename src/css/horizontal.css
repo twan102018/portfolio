@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.section-container {
+    position: relative;
+    height: 200vh; /* 300% of viewport height */
+    background-color: #ebebe1; /* Darker gray */
+}
+
+.sticky-container {
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    align-items: center;
+    overflow: hidden;
+}
+
+.scroll-container {
+    display: flex;
+    gap: 16px; /* Adjust gap size as needed */
+}
+
+.card {
+    position: relative;
+    height: 450px; /* Fixed height */
+    width: 100vw; /* Fixed width */
+    overflow: hidden;
+    background-color: #e5e7eb; /* Light gray */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+}
+
+.card:hover .background-image {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    place-content: center;
+    z-index: 10; /* Above the background image */
+}
+
+.title {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    font-size: 4rem; /* 6xl size */
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    z-index: 10; /* Above the background image */
+}
