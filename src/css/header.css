@@ -1,0 +1,56 @@
+nav {
+    margin: 1rem;
+    background-color: #fff;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 1rem;
+    position: sticky;
+    top: .5rem; /* Add this to make the nav sticky at the top */
+    z-index: 1000; /* Optional: Ensures nav stays above other content */
+}
+
+nav > ul {
+    list-style-type: none;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; 
+    height: 100%; 
+    padding: 0;
+    margin: 0;
+}
+
+.nav-li {
+    padding: 14px;
+    display: flex;
+    align-items: center; 
+    height: 100%; 
+}
+
+.nav-li > a {
+    color: #aab6b6; /* Navy link color */
+    font-size: 1.3rem;
+    font-weight: 600;
+    opacity: .7;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+.nav-li >a:hover{
+    color: #002d42; 
+}
+
+nav h1 span {
+    background: linear-gradient(45deg, #ff4e50, #f9d423);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
