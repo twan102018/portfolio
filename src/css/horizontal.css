@@ -1,7 +1,7 @@
 .section-container {
     position: relative;
     height: 300vh; /* 300% of viewport height */
-    background-color: #ebebe1; /* Darker gray */
+    background-color: #7c7c7c; /* Darker gray */
 }
 
 .sticky-container {

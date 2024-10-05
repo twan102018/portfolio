@@ -9,7 +9,7 @@
 }
 
 .cards {
-    border: black solid 2px;
+    border: white solid 2px;
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -17,11 +17,13 @@
     text-align: center;
     padding: 20px;
     margin: 20px;
+    color: white;
 }
 
 .cards > i {
     font-size: 40px;
     margin-bottom: 10px;
+    color: white;
 }
 
 .cards > h3 {

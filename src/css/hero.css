@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     height: 40vh; /* Full viewport height */
-    color: black; /* Text color */
+    color: white; /* Text color */
     text-align: center; /* Center align text */
     position: relative;
     overflow: hidden; /* Prevent content overflow */
@@ -38,9 +38,9 @@
     padding: 12px 24px; /* Button padding */
     font-size: 1rem; /* Button text size */
     background-color: transparent; /* Transparent background */
-    border: 2px solid black; /* White border */
+    border: 2px solid white; /* White border */
     border-radius: 30px; /* Rounded corners */
-    color: black; /* Button text color */
+    color: white; /* Button text color */
     transition: all 0.3s ease; /* Smooth transition */
   }
   
