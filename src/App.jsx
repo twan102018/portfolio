@@ -3,6 +3,7 @@ import React from 'react';
 import { CursorProvider } from './hooks/CursorContext'; // Import the provider
 import Header from './components/header';
 import Hero from './components/hero';
+import Carousel from './components/carousel';
 import Horizontal from './components/horizontal';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <CursorProvider>
       <Header />
       <Hero />
+      <Carousel />
       <Horizontal />
       {/* Other components can be added here */}
     </CursorProvider>

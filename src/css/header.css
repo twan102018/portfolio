@@ -1,5 +1,6 @@
+/* Regular styles */
 nav {
-    margin: 1rem;
+    margin-top: 1rem;
     background-color: #fff;
     flex-flow: row;
     justify-content: space-between;
@@ -10,19 +11,25 @@ nav {
     margin-right: auto;
     display: flex;
     padding: 1rem;
-    position: sticky;
-    top: .5rem; /* Add this to make the nav sticky at the top */
-    z-index: 1000; /* Optional: Ensures nav stays above other content */
 }
 
 nav > ul {
     list-style-type: none;
     display: flex; 
     align-items: center; 
-    justify-content: space-around; 
+    justify-content: space-between; 
     height: 100%; 
     padding: 0;
     margin: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links.open {
+    display: block;
 }
 
 .nav-li {
@@ -33,15 +40,16 @@ nav > ul {
 }
 
 .nav-li > a {
-    color: #aab6b6; /* Navy link color */
+    color: #aab6b6;
     font-size: 1.3rem;
     font-weight: 600;
-    opacity: .7;
-    transition-duration: .5s;
+    opacity: 0.7;
+    transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
 }
-.nav-li >a:hover{
-    color: #002d42; 
+
+.nav-li >a:hover {
+    color: #002d42;
 }
 
 nav h1 span {
@@ -53,4 +61,117 @@ nav h1 span {
 
 a {
     text-decoration: none;
+}
+
+.header-button {
+    background-color: rgb(0, 45, 66);
+    color: rgb(235, 235, 225);
+    padding: 23px 19px 19px 19px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: none;
+}
+
+.header-button:hover {
+    background-color: #f2febc;
+    color: rgb(0, 45, 66);
+    transition: 1s;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+.line.open:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.line.open:nth-child(2) {
+    opacity: 0;
+}
+
+.line.open:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive Styles */
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        position: relative; /* Keep this line */
+        margin-top: 1rem;
+        background-color: #fff;
+        flex-flow: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 6rem;
+        padding: 1rem;
+        z-index: 50;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .nav-links {
+        position: absolute; /* Keep this line */
+        top: 100%; /* Keep this line */
+        left: 0;
+        width: 100%; /* Ensure this takes full width */
+        height: auto; /* Set to auto for the open state */
+        overflow: hidden;
+        background-color: #002d42; /* Keep this line */
+        display: none;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center links horizontally */
+        justify-content: center; /* Center links vertically */
+        transition: height 0.3s ease;
+        padding: 1rem 0; /* Add padding for spacing */
+    }
+    
+    .nav-links.open {
+        display: flex; /* Ensure it's flex */
+    }
+
+    .nav-li {
+        width: 100%; /* Ensure li takes full width */
+        text-align: center; /* Center text within li */
+        padding: 1rem 0; /* Padding for spacing */
+    }
+
+    .nav-li > a {
+        color: white; /* Ensure text is visible against dark background */
+        display: block; /* Allow the link to take full width */
+        width: 100%; /* Ensure the anchor takes full width */
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .header-button {
+        background-color: #f2febc;
+        color: #002d42;
+        text-align: center; /* Center text within button */
+        border: none;
+    }
+    
+    .header-button:hover {
+        background-color: #234555;
+        color: #f2febc;
+    }
+    .nav-li > a:hover {
+        color: #fdfdcc; /* Change this to your desired hover color */
+    }
 }

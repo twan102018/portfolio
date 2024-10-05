@@ -1,12 +1,6 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-
 .section-container {
     position: relative;
-    height: 200vh; /* 300% of viewport height */
+    height: 300vh; /* 300% of viewport height */
     background-color: #ebebe1; /* Darker gray */
 }
 
@@ -21,30 +15,16 @@ body {
 
 .scroll-container {
     display: flex;
-    gap: 16px; /* Adjust gap size as needed */
 }
 
 .card {
     position: relative;
-    height: 450px; /* Fixed height */
+    height: 100vh; /* Fixed height */
     width: 100vw; /* Fixed width */
     overflow: hidden;
-    background-color: #e5e7eb; /* Light gray */
-}
-
-.background-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s;
-}
-
-.card:hover .background-image {
-    transform: scale(1.1); /* Scale effect on hover */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content {

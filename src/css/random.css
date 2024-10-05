@@ -1,0 +1,56 @@
+/* Container for the section with background */
+.positioned-section {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: visible; /* Allow images to be visible */
+}
+/* Overlay text styling */
+.overlay-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.overlay-text h1 {
+    font-size: 8vw; /* Responsive large font */
+    font-family: 'Times New Roman', serif;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Images styling */
+.positioned-img {
+    position: absolute;
+    object-fit: cover;
+    z-index: 1; /* Keep images behind the text */
+    width: 20vw; /* Responsive size */
+    height: auto;
+    opacity: 0.9; /* Slight transparency for depth */
+    transition: transform 0.3s ease-in-out;
+}
+
+.positioned-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Individual positioning of images */
+.img-a {
+    top: 10%;
+    left: 10%;
+    transform: rotate(-5deg);
+}
+
+.img-b {
+    top: 40%;
+    right: 15%;
+    transform: rotate(10deg);
+}
+
+.img-c {
+    bottom: 5%;
+    left: 30%;
+    transform: rotate(-3deg);
+}

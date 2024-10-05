@@ -1,17 +1,49 @@
-// src/components/Header.js
 import '../css/header.css';
-import { useCursor } from '../hooks/CursorContext'; // Import the context
+import { useState, useEffect } from 'react';
 
 function Header() {
-  const { cursorVariant, variants, textEnter, textLeave } = useCursor(); // Use the context
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  // Function to close the menu
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  // Handle window resize
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        closeMenu(); // Close the menu if the screen is wider than 768px
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    
+    // Cleanup listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <nav>
-      <ul onMouseEnter={textEnter} onMouseLeave={textLeave}>
-        <li className="nav-li"><a href="#">Over Mij</a></li>
+      <div className="menu-icon" onClick={toggleMenu}>
+        <div className={isOpen ? 'line open' : 'line'}></div>
+        <div className={isOpen ? 'line open' : 'line'}></div>
+        <div className={isOpen ? 'line open' : 'line'}></div>
+      </div>
+
+      <ul className={isOpen ? 'nav-links open' : 'nav-links'}>
+        <li className="nav-li"><a href="#">Skills</a></li>
         <li className="nav-li"><a href="#">Tijdlijn</a></li>
         <li className="nav-li"><a href="#">Projecten</a></li>
-        <li className="nav-li"><a href="#">Contact</a></li>
+        <li>
+          <button className="header-button">Contact</button>
+        </li>
       </ul>
     </nav>
   );

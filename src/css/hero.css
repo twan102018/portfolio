@@ -4,11 +4,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 40vh; /* Full viewport height */
     color: black; /* Text color */
     text-align: center; /* Center align text */
     position: relative;
     overflow: hidden; /* Prevent content overflow */
+    min-height: min-content;
   }
   
   .hero-content {
@@ -40,7 +41,6 @@
     border: 2px solid black; /* White border */
     border-radius: 30px; /* Rounded corners */
     color: black; /* Button text color */
-    cursor: pointer; /* Pointer cursor */
     transition: all 0.3s ease; /* Smooth transition */
   }
   

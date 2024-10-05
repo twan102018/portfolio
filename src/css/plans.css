@@ -1,0 +1,91 @@
+.pricing-plans {
+    display: flex;
+    background-color: #d9daca;
+    height: 80vh;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .plan {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    height: 50vh;
+    text-align: center;
+    background-color: #ebebe1;
+    margin: 20px;
+  }
+  
+  .business-plan {
+    background-color: #1e2d3d;
+    color: #fff;
+    margin-bottom: 5vh;
+  }
+  
+  .business-plan .btn {
+    color: #fff;
+  }
+  
+  .business-plan .primary-btn {
+    background-color: #9fe870;
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  
+  .price span {
+    color: #666;
+  }
+  
+  .features {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .features li i {
+    color: #9fe870; /* Green color */
+    margin-right: 10px;
+  }
+  
+  
+  .btn-plans {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .primary-btn-plans {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .secondary-btn-plans {
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+  }
+  
+  .business-plan .secondary-btn-plans {
+    border-color: #fff;
+    color: #fff;
+  }
+  
+  .badge {
+    background-color: #9fe870;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 12px;
+    color: #000;
+  }
+  

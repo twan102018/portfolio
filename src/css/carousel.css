@@ -1,0 +1,49 @@
+.card-container {
+    margin-top: 5%;
+    min-height: 300px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: center; /* Keep items aligned in one row */
+    flex-direction: row; /* Default horizontal layout */
+}
+
+.cards {
+    border: black solid 2px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.cards > i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.cards > h3 {
+    margin-bottom: 10px;
+}
+
+.cards > p {
+    font-size: 14px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 992px) {
+    .card-container {
+        flex-direction: column; /* Change to vertical layout */
+        justify-content: center; /* Center the items */
+        align-items: center; /* Align cards in the center */
+        padding-left: 0; /* Remove horizontal padding */
+        padding-right: 0;
+    }
+
+    .cards {
+        width: 80%; /* Adjust card width to fit vertically */
+        min-width: unset; /* Remove the min-width restriction */
+    }
+}

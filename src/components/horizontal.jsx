@@ -1,6 +1,10 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 import '../css/horizontal.css'; // Ensure you have this CSS file for styling
+import Skills from "./skills";
+import PortfolioSection from "./reviews";
+import RandomPositionSection from "./random";
+
 
 const Horizontal = () => {
   return (
@@ -16,7 +20,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-66.6%"]);
 
   return (
     <section ref={targetRef} className="section-container">
@@ -24,31 +28,13 @@ const HorizontalScrollCarousel = () => {
         <motion.div style={{ x }} className="scroll-container">
           {/* Manually added divs instead of cards */}
           <div className="card">
-            <div
-              className="background-image"
-              style={{ backgroundImage: `url(/imgs/abstract/1.jpg)` }}
-            ></div>
-            <div className="content">
-              <p className="title">Title 1</p>
-            </div>
+            <Skills />
           </div>
           <div className="card">
-            <div
-              className="background-image"
-              style={{ backgroundImage: `url(/imgs/abstract/2.jpg)` }}
-            ></div>
-            <div className="content">
-              <p className="title">Title 2</p>
-            </div>
+            <PortfolioSection />
           </div>
           <div className="card">
-            <div
-              className="background-image"
-              style={{ backgroundImage: `url(/imgs/abstract/3.jpg)` }}
-            ></div>
-            <div className="content">
-              <p className="title">Title 3</p>
-            </div>
+            <RandomPositionSection/>
           </div>
           {/* Add more divs as needed */}
         </motion.div>
