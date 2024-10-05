@@ -78,6 +78,7 @@ a {
 .header-button:hover {
     background-color: #83c587; /* Vibrant green on hover */
     color: var(--off-black); /* Dark text for contrast */
+    transition: 1s;
 }
 
 /* Hamburger Menu Icon */

@@ -20,6 +20,10 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 }
+.plan:hover {
+ transform: translateY(-1rem);
+ transition: 1s;
+}
 
 .main-skills {
   color: var(--white);

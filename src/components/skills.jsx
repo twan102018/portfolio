@@ -1,11 +1,12 @@
 // src/components/Hero.js
 import "../css/skills.css";
-
+import { useCursor } from '../hooks/CursorContext';
 export default function Skills() {
+  const { textEnter, textLeave } = useCursor();
   return (
     <section className="plans">
       <div className="pricing-plans">
-        <div className="plan">
+        <div className="plan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
           <h3>Frameworks & Libraries</h3>
           <p className="description">Frameworks waar ik ervaring mee heb.</p>
           <ul className="features">
@@ -28,7 +29,7 @@ export default function Skills() {
           </ul>
         </div>
 
-        <div className="plan main-skills">
+        <div className="plan main-skills" onMouseEnter={textEnter} onMouseLeave={textLeave}>
           <h3>Talen & Tech</h3>
           <p className="description">Talen waar ik ervaring mee heb.</p>
           <ul className="features">
@@ -42,7 +43,7 @@ export default function Skills() {
               <i className="devicon-html5-plain colored"></i> HTML5
             </li>
             <li>
-              <i className="devicon-css3-plain colored"></i> CSS5
+              <i className="devicon-css3-plain colored"></i> CSS3
             </li>
             <li>
               <i className="devicon-sass-original colored"></i> SASS
@@ -53,7 +54,7 @@ export default function Skills() {
           </ul>
         </div>
 
-        <div className="plan">
+        <div className="plan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
           <h3>Databases</h3>
           <p className="description">Databases waar ik ervaring mee heb.</p>
           <ul className="features">
