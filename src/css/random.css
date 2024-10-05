@@ -18,7 +18,7 @@
 .overlay-text h1 {
     font-size: 8vw; /* Responsive large font */
     font-family: 'Times New Roman', serif;
-    color: rgba(0, 0, 0, 0.8);
+    color: #e0e0e0;
 }
 
 /* Images styling */

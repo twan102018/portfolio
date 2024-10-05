@@ -18,7 +18,8 @@
   .text-overlay h1 {
     font-size: 10vw; /* Scale dynamically with viewport width */
     font-family: 'Times New Roman', serif;
-    color: rgba(0, 0, 0, 0.8); /* Slightly transparent */
+    color: #e0e0e0;
+
   }
   
   .text-overlay .page-indicator {

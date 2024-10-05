@@ -1,48 +1,40 @@
 .pricing-plans {
-    display: flex;
-    height: 80vh;
-    width: 80vw;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .plan {
-    padding: 20px;
-    width: 300px;
-    height: 50vh;
-    text-align: center;
-    background-color: #f8f4f4;
-    margin: 20px;
-  }
-  
-  .main-skills {
-    background-color: #1e2d3d;
-    color: #fff;
-    margin-bottom: 5vh;
-  }
-  
-  .main-skills .btn {
-    color: #fff;
-  }
-  
-  .main-skills .primary-btn {
-    background-color: #9fe870;
-  }
-  
-  .price {
-    font-weight: bold;
-  }
-  
-  .price span {
-    color: #666;
-  }
-  
-  .features {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .features li {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  height: 80vh;
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f1f1f;/* Darker grey for the container */
+
+
+}
+
+.plan {
+  padding: 20px;
+  width: 300px;
+  height: 50vh;
+  text-align: center;
+  background-color: #2b2b2b; /* Darker background for the plan */
+  margin: 20px;
+  color: var(--light-grey); /* Consistent text color */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.main-skills {
+  color: var(--white);
+  margin-bottom: 5vh;
+  padding: 20px;
+  background-color: #535252;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  color: var(--light-grey); /* Text color for features */
+}

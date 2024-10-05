@@ -1,7 +1,7 @@
 /* Regular styles */
 nav {
     margin-top: 1rem;
-    background-color: var(--off-black);
+    background-color: var(--off-black); /* Dark background */
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
@@ -40,16 +40,17 @@ nav > ul {
 }
 
 .nav-li > a {
-    color: var(--white);
+    color: var(--white); /* Main link color */
     font-size: 1.3rem;
     font-weight: 600;
-    opacity: 0.7;
+    opacity: 0.8; /* Higher opacity for visibility */
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
 }
 
-.nav-li >a:hover {
-    color: var(--grey)
+/* Set hover color for normal menu links */
+.nav-li > a:hover {
+    color: #f2febc; /* Brighter hover color */
 }
 
 nav h1 span {
@@ -63,19 +64,20 @@ a {
     text-decoration: none;
 }
 
+/* Header Button */
 .header-button {
-    background-color: rgb(0, 45, 66);
-    color: rgb(235, 235, 225);
+    background-color: #1e2d3d; /* Dark blue background */
+    color: var(--white); /* Text color */
     padding: 23px 19px 19px 19px;
     font-size: 1.3rem;
     font-weight: 600;
     border: none;
+    transition: 0.3s; /* Smooth transition */
 }
 
 .header-button:hover {
-    background-color: #f2febc;
-    color: rgb(0, 45, 66);
-    transition: 1s;
+    background-color: #83c587; /* Vibrant green on hover */
+    color: var(--off-black); /* Dark text for contrast */
 }
 
 /* Hamburger Menu Icon */
@@ -87,7 +89,7 @@ a {
 .line {
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #afafaf; /* Dark line color */
     margin: 4px;
     transition: all 0.3s ease;
 }
@@ -105,12 +107,10 @@ a {
 }
 
 /* Responsive Styles */
-/* Responsive Styles */
 @media (max-width: 768px) {
     nav {
-        position: relative; /* Keep this line */
+        position: relative;
         margin-top: 1rem;
-        background-color: #b8b8b8;
         flex-flow: row;
         display: flex;
         justify-content: center;
@@ -125,53 +125,51 @@ a {
     }
     
     .nav-links {
-        position: absolute; /* Keep this line */
-        top: 100%; /* Keep this line */
+        position: absolute; 
+        top: 100%; 
         left: 0;
-        width: 100%; /* Ensure this takes full width */
-        height: auto; /* Set to auto for the open state */
+        width: 100%; 
+        height: auto; 
         overflow: hidden;
-        background-color: #002d42; /* Keep this line */
+        background-color: #585555; /* Dark background for dropdown */
         display: none;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center links horizontally */
-        justify-content: center; /* Center links vertically */
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
         transition: height 0.3s ease;
-        padding: 1rem 0; /* Add padding for spacing */
+        padding: 1rem 0; 
     }
     
     .nav-links.open {
-        display: flex; /* Ensure it's flex */
+        display: flex; /* Show links in open state */
     }
 
     .nav-li {
-        width: 100%; /* Ensure li takes full width */
-        text-align: center; /* Center text within li */
-        padding: 1rem 0; /* Padding for spacing */
+        width: 100%; 
+        text-align: center; 
+        padding: 1rem 0; 
     }
 
     .nav-li > a {
-        color: white; /* Ensure text is visible against dark background */
-        display: block; /* Allow the link to take full width */
-        width: 100%; /* Ensure the anchor takes full width */
+        display: block; 
+        width: 100%; 
+        color: var(--white); /* Maintain normal link color */
+        opacity: 0.8; /* Consistent opacity */
+        transition: color 0.5s ease; /* Transition for hover effect */
+    }
+
+    /* Set hover color for dropdown links */
+    .nav-li > a:hover {
+        color: #f2febc; /* Use the hover color for dropdown links */
     }
 
     .menu-icon {
         display: flex;
     }
 
+    /* Mobile Header Button */
     .header-button {
-        background-color: #f2febc;
-        color: #002d42;
-        text-align: center; /* Center text within button */
+        text-align: center; 
         border: none;
-    }
-    
-    .header-button:hover {
-        background-color: #234555;
-        color: #f2febc;
-    }
-    .nav-li > a:hover {
-        color: #fdfdcc; /* Change this to your desired hover color */
     }
 }
