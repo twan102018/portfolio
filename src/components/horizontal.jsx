@@ -3,7 +3,7 @@ import { useRef } from "react";
 import '../css/horizontal.css'; // Ensure you have this CSS file for styling
 import Skills from "./skills";
 import PortfolioSection from "./reviews";
-import RandomPositionSection from "./random";
+import Socials from "./random";
 
 
 const Horizontal = () => {
@@ -20,7 +20,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-66.6%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-67%"]);
 
   return (
     <section ref={targetRef} className="section-container">
@@ -34,7 +34,7 @@ const HorizontalScrollCarousel = () => {
             <PortfolioSection />
           </div>
           <div className="card">
-            <RandomPositionSection/>
+            <Socials/>
           </div>
           {/* Add more divs as needed */}
         </motion.div>

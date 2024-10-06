@@ -5,6 +5,7 @@ import Header from './components/header';
 import Hero from './components/hero';
 import Carousel from './components/carousel';
 import Horizontal from './components/horizontal';
+import Timeline from './components/timeline';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Carousel />
       <Horizontal />
+      <Timeline />
       {/* Other components can be added here */}
     </CursorProvider>
   );

@@ -1,27 +1,28 @@
 import React from 'react';
 import '../css/random.css'; // Make sure the path is correct
+import photo2 from '../imgs/IMG_0019.jpg';
 
-export default function RandomPositionSection() {
+export default function Socials() {
   return (
     <section className="positioned-section">
       {/* Text Overlay */}
       <div className="overlay-text">
-        <h1>Web Design</h1>
+        <h1>Socials</h1>
       </div>
 
       {/* Randomly Positioned Images */}
       <img 
-        src="https://api.coevalstudio.com/uploads/1_2f0fc6eac2.jpg" 
+        src={photo2}
         alt="Interior 1" 
         className="positioned-img img-a" 
       />
       <img 
-        src="https://coevalstudio.com/img/works/item-1.jpg" 
+        src={photo2}
         alt="Interior 2" 
         className="positioned-img img-b" 
       />
       <img 
-        src="https://api.coevalstudio.com/uploads/Pressed_Roots_B_Card_31191ce6ef.png" 
+        src={photo2}
         alt="Interior 3" 
         className="positioned-img img-c" 
       />
