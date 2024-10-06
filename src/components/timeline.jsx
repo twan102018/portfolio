@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import '../css/timeline.css';
 
 const timelineData = [
-  { id: 1, title: 'Started Software Engineering Program', description: 'Lorem ipsum dolor sit amet.', year: '2022' },
-  { id: 2, title: 'Learned Full-stack Development', description: 'Vestibulum ante ipsum primis.', year: '2023' },
-  { id: 3, title: 'Completed First Internship At Triple Interactive B.V.', description: 'Phasellus vulputate turpis.', year: '2023' },
+  { id: 1, title: 'Begonnen Software Development', description: 'Na mijn vmbo-tl diploma gehaald te hebben ben ik de opleiding software development gaan volgen aan het Grafisch Lyceum Rotterdam', year: '2022' },
+  { id: 2, title: '1e jaar software development', description: 'Ik heb dit jaar veel nieuwe dingen geleerd, hierbij heb ik de een introductie gekregen tot de talen Javascript, PHP en C#, verder heb ik ook kennis gemaakt met allerlij soorten werkprocessen.', year: '2023' },
+  { id: 3, title: '2e jaar software development', description: 'Dit jaar ', year: '2023' },
   { id: 4, title: 'Developed a Personal Project', description: 'Curabitur lobortis sagittis.', year: '2024' },
-  { id: 5, title: 'Contributed to Open Source', description: 'Fusce nec velit posuere.', year: '2024' },
+  { id: 5, title: 'Started First Internship At Triple Interactive B.V.', description: 'In mijn laatste jaar van school ben ik van start gegaan bij mijn 1e stageplek.', year: '2024' },
 ];
 
 const Timeline = () => {
@@ -23,10 +23,10 @@ const Timeline = () => {
 
     const distanceScrolled = Math.max(0, viewportHeight - timelineRect.top);
     // Adjusted to make scroll tracking faster
-    const totalScrollableDistance = (viewportHeight + timelineRect.height) * 0.3; // Reduce the factor to make progress faster
+    const totalScrollableDistance = (viewportHeight + timelineRect.height) * 0.65; // Reduce the factor to make progress faster
 
     const progress = Math.min(1, distanceScrolled / totalScrollableDistance);
-    setProgressHeight(progress * 100);
+    setProgressHeight(progress * 110);
 
     // Determine which items should be active based on scroll progress
     const newActiveItems = timelineData.map((item, index) => {
