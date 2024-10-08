@@ -35,10 +35,32 @@
 .features {
   list-style: none;
   padding: 0;
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items horizontally */
+  margin: 0; /* Reset margin */
 }
 
 .features li {
   display: flex;
-  align-items: center;
   color: var(--light-grey); /* Text color for features */
+}
+@media screen and (max-width: 992px) {
+  .main-skills {
+    margin: 0;
+  }
+  .plan{
+    margin: 5px;
+    height: auto;
+  }
+  .pricing-plans {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f;/* Darker grey for the container */
+    overflow: hidden;
+  
+  }
 }
