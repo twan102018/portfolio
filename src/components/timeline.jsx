@@ -23,7 +23,7 @@ const Timeline = () => {
 
     const distanceScrolled = Math.max(0, viewportHeight - timelineRect.top);
     // Adjusted to make scroll tracking faster
-    const totalScrollableDistance = (viewportHeight + timelineRect.height) * 0.65; // Reduce the factor to make progress faster
+    const totalScrollableDistance = (viewportHeight + timelineRect.height) * 0.4; // Reduce the factor to make progress faster
 
     const progress = Math.min(1, distanceScrolled / totalScrollableDistance);
     setProgressHeight(progress * 110);
