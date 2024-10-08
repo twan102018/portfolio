@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Hero />
       <Carousel />
-      <Timeline />
+      <Horizontal />
       {/* Other components can be added here */}
     </CursorProvider>
   );
