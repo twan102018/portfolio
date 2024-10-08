@@ -18,6 +18,7 @@ body {
   background-color: var(--dark-bg);
   font-family: "Space Grotesk", sans-serif;
   color: var(--light-grey);
+  cursor: none;
 }
 
 h1, h2, h3 {
@@ -39,6 +40,7 @@ h1, h2, h3 {
   pointer-events: none;
   z-index: 50000;
   transition: transform 0.1s ease;
+  will-change: transform;
 }
 
 .cursor-follow {
