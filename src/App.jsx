@@ -14,6 +14,7 @@ function App() {
       <Hero />
       <Carousel />
       <Horizontal />
+      <Timeline />
       {/* Other components can be added here */}
     </CursorProvider>
   );
