@@ -5,6 +5,7 @@
     width: 80%;
     margin: 50px auto;
     max-width: 800px;
+    overflow: hidden;
   }
   
   .timeline-progress-bar {
