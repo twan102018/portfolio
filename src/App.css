@@ -18,8 +18,6 @@ body {
   background-color: var(--dark-bg);
   font-family: "Space Grotesk", sans-serif;
   color: var(--light-grey);
-  overflow-x: hidden;
-  width: 100%;
 }
 
 h1, h2, h3 {
