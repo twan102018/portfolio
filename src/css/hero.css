@@ -1,22 +1,40 @@
 /* src/css/hero.css */
 
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40vh; /* Full viewport height */
-    color: white; /* Text color */
-    text-align: center; /* Center align text */
-    position: relative;
-    overflow: hidden; /* Prevent content overflow */
-    min-height: min-content;
-    text-shadow: 5px 5px 10px #ffffffbe, -5px -5px 10px #ffffffbe;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh; /* Full viewport height */
+  color: white; /* Text color */
+  text-align: center; /* Center align text */
+  position: relative;
+  overflow: hidden; /* Prevent content overflow */
+  min-height: min-content;
+  text-shadow: 5px 5px 10px #ffffffbe, -5px -5px 10px #ffffffbe;
+}
+
+#mask-image {
+  mask-image: url(../imgs/mask.svg);
+  mask-repeat: no-repeat; /* Prevent repeating */
+  position: absolute; /* Position it absolutely */
+  top: -30%; /* Move down from the top */
+  left: 40%; /* Move right from the left */
+  right: auto; /* Don't set right */
+  bottom: auto; /* Don't set bottom */
+  z-index: 1; /* Set a lower z-index than hero-content */
   
-  .hero-content {
-    max-width: 1000px; /* Limit the max width for larger screens */
-    padding: 20px;
-  }
+  object-fit: cover; /* Cover the entire container */
+  object-position: 50% 25%; /* You can still adjust this for the image focus */
+}
+
+
+.hero-content {
+  max-width: 1000px; /* Limit the max width for larger screens */
+  padding: 20px;
+  position: relative; /* Create a stacking context */
+  z-index: 2; /* Ensure it's above the image */
+}
+
   
   .hero-title {
     font-size: 2.5rem; /* Larger title */
@@ -77,6 +95,21 @@
   @keyframes typing {
     to {
       width: 100%; /* End with full width */
+    }
+  }
+  @media screen and (max-width: 992px) {
+    #mask-image {
+      mask-image: url(../imgs/mask.svg);
+      mask-repeat: no-repeat; /* Prevent repeating */
+      position: absolute; /* Position it absolutely */
+      top: -30%; /* Move down from the top */
+      left: 0%; /* Move right from the left */
+      right: auto; /* Don't set right */
+      bottom: auto; /* Don't set bottom */
+      z-index: 1; /* Set a lower z-index than hero-content */
+      
+      object-fit: cover; /* Cover the entire container */
+      object-position: 50% 25%; /* You can still adjust this for the image focus */
     }
   }
   
