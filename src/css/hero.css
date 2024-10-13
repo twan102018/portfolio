@@ -21,10 +21,9 @@
   left: 40%; /* Move right from the left */
   right: auto; /* Don't set right */
   bottom: auto; /* Don't set bottom */
+  width: 100%;
+  height: 100%;
   z-index: 1; /* Set a lower z-index than hero-content */
-  
-  object-fit: cover; /* Cover the entire container */
-  object-position: 50% 25%; /* You can still adjust this for the image focus */
 }
 
 
