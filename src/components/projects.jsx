@@ -10,9 +10,9 @@ const Projects = () => {
   const [isHoveringAllowed, setIsHoveringAllowed] = useState(true);
 
   const menuItems = [
-    { id: 'https://www.youtube.com/watch?v=cuuXvVfORfk', title: 'Project 1', icon: arrow, img: projectimg1 },
-    { id: 'https://www.youtube.com/watch?v=cuuXvVfORfk', title: 'Project 2', icon: arrow, img: projectimg2 },
-    { id: 'https://www.youtube.com/watch?v=cuuXvVfORfk', title: 'Project 3', icon: arrow, img: projectimg1 }
+    { id: 'http://localhost:3000/', title: 'Project 1', icon: arrow, img: projectimg1 },
+    { id: 'http://localhost:3001/', title: 'Project 2', icon: arrow, img: projectimg2 },
+    { id: 'http://localhost:3002/', title: 'Project 3', icon: arrow, img: projectimg1 }
   ];
 
   const handleMouseMove = (e, index) => {

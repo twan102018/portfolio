@@ -22,7 +22,7 @@ function Carousel() {
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
-          <i class="devicon-linkedin-plain"></i>
+          <i className="devicon-linkedin-plain"></i>
           <h3>Linkedin</h3>
           <p className="text">Let's connect</p>
         </motion.div>
@@ -34,7 +34,7 @@ function Carousel() {
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
-          <i class="devicon-github-original"></i>
+          <i className="devicon-github-original"></i>
           <h3>Github</h3>
           <p className="text">Github to view my Projects</p>
         </motion.div>
@@ -46,7 +46,7 @@ function Carousel() {
           whileTap={{ scale: 0.95 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
-          <i class='bx bxl-discord-alt' ></i>
+          <i className='bx bxl-discord-alt' ></i>
           <h3>Discord</h3>
           <p className="text">To contact me</p>
         </motion.div>

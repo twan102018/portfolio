@@ -17,7 +17,7 @@ export default function Skills() {
               <i className="devicon-laravel-plain colored"></i> Laravel
             </li>
             <li>
-              <i class="devicon-nextjs-original-wordmark"></i>
+              <i className="devicon-nextjs-original-wordmark"></i>
               NextJs
             </li>
             <li>
@@ -27,7 +27,7 @@ export default function Skills() {
               <i className="devicon-electron-original colored"></i> Electron
             </li>
             <li>
-              <i class="devicon-framermotion-original"></i>Framer-Motion
+              <i className="devicon-framermotion-original"></i>Framer-Motion
             </li>
           </ul>
         </div>
