@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh; /* Full viewport height */
+  min-height: 40vh; /* Full viewport height */
   color: white; /* Text color */
   text-align: center; /* Center align text */
   position: relative;
