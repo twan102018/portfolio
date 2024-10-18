@@ -9,7 +9,7 @@
   text-align: center; /* Center align text */
   position: relative;
   overflow: hidden; /* Prevent content overflow */
-  min-height: calc(min-content + 10vh);
+  min-height: min-content;
   text-shadow: 5px 5px 10px #ffffffbe, -5px -5px 10px #ffffffbe;
 }
 
