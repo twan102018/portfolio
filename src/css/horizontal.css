@@ -1,6 +1,6 @@
 .section-container {
     position: relative;
-    height: 300vh; /* 300% of viewport height */
+    height: 200vh; /* 300% of viewport height */
 }
 
 .sticky-container {

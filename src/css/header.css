@@ -50,7 +50,7 @@ nav > ul {
 
 /* Set hover color for normal menu links */
 .nav-li > a:hover {
-    color: #f2febc; /* Brighter hover color */
+    color: #a0a0a0; /* Brighter hover color */
 }
 
 nav h1 span {

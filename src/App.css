@@ -21,6 +21,7 @@ body {
   font-family: "Space Grotesk", sans-serif;
   color: var(--light-grey);
   cursor: none;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {

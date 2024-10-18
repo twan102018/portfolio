@@ -17,7 +17,7 @@ function Hero() {
           <button className="btn btn-primary">Contact</button>
         </div>
       </div>
-      <img src={image} alt="" id='mask-image'/>
+      {/* <img src={image} alt="" id='mask-image'/> */}
     </section>
   );
 }

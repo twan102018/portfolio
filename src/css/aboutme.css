@@ -38,14 +38,14 @@
 
 /* Individual positioning of images */
 .img-a {
-    top: 10%;
+    top: 5%;
     left: 10%;
     transform: rotate(-5deg);
 }
 
 .img-b {
     top: 40%;
-    right: 15%;
+    right: 0%;
     transform: rotate(10deg);
 }
 
@@ -54,3 +54,15 @@
     left: 30%;
     transform: rotate(-3deg);
 }
+@media screen and (max-width: 1600px) {
+    .overlay-text {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        z-index: 2;
+        background-color: rgb(44, 44, 44);
+    }
+  }
+  
