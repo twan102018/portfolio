@@ -26,6 +26,9 @@ export default function Skills() {
             <li>
               <i className="devicon-electron-original colored"></i> Electron
             </li>
+            <li>
+              <i class="devicon-framermotion-original"></i>Framer-Motion
+            </li>
           </ul>
         </div>
 
@@ -54,9 +57,6 @@ export default function Skills() {
             </li>
             <li>
               <i className="devicon-nodejs-plain colored"></i> NodeJS
-            </li>
-            <li>
-              <i class="devicon-framermotion-original"></i>Framer-Motion
             </li>
           </ul>
         </div>
