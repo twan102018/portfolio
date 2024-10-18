@@ -3,7 +3,8 @@
     position: relative;
     height: 100vh;
     width: 100vw;
-    overflow: none; /* Allow images to be visible */
+    max-width: 100vw;
+    overflow-x: none; /* Allow images to be visible */
 }
 /* Overlay text styling */
 .overlay-text {
