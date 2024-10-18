@@ -1,30 +1,30 @@
 import React, { useState } from 'react';
 import projectimg1 from './img/1.jpg';
-import projectimg2 from './img/2.jpg'; // Importing the second image
-import '../css/projects.css'; // Import the CSS file for styles
+import projectimg2 from './img/2.jpg';
+import arrow from './img/arrow.png';
+import '../css/projects.css';
 
 const Projects = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
   const [hoverPos, setHoverPos] = useState({ x: 0 });
-  const [isHoveringAllowed, setIsHoveringAllowed] = useState(true); // Nieuwe state voor cooldown
+  const [isHoveringAllowed, setIsHoveringAllowed] = useState(true);
 
   const menuItems = [
-    { id: 'link1', title: 'Link 1', icon: "", img: projectimg1 },
-    { id: 'link2', title: 'Link 2', icon: "", img: projectimg2 },
-    { id: 'link3', title: 'Link 3', icon: "", img: projectimg1 }
+    { id: 'https://www.youtube.com/watch?v=cuuXvVfORfk', title: 'Project 1', icon: arrow, img: projectimg1 },
+    { id: 'https://www.youtube.com/watch?v=cuuXvVfORfk', title: 'Project 2', icon: arrow, img: projectimg2 },
+    { id: 'https://www.youtube.com/watch?v=cuuXvVfORfk', title: 'Project 3', icon: arrow, img: projectimg1 }
   ];
 
   const handleMouseMove = (e, index) => {
-    if (!isHoveringAllowed) return; // Als hover niet is toegestaan, doe niets
+    if (!isHoveringAllowed) return;
 
     setHoverIndex(index);
     setHoverPos({ x: e.clientX });
 
-    // Cooldown instellen
     setIsHoveringAllowed(false);
     setTimeout(() => {
       setIsHoveringAllowed(true);
-    }, 300); // 1 seconde cooldown
+    }, 300);
   };
 
   const handleMouseLeave = () => {
@@ -37,14 +37,17 @@ const Projects = () => {
       <div className="menu-list">
         {menuItems.map((item, index) => (
           <div key={item.id} className="menu-item">
-            <div
+            <a
+              href={item.id}
+              target="_blank"
+              rel="noopener noreferrer" // For security reasons
               className="menu-link"
               onMouseMove={(e) => handleMouseMove(e, index)}
               onMouseLeave={handleMouseLeave}
             >
               <span>{item.title}</span>
               <img src={item.icon} alt={`Icon ${index + 1}`} />
-            </div>
+            </a>
 
             <div
               className="hover-reveal"

@@ -13,13 +13,14 @@
     position: relative;
     z-index: 10;
   }
-  
+
   .menu-link {
     display: flex;
     padding: 4rem 0 2rem 0;
     justify-content: space-between;
+    align-items: center; /* Add this line to center items vertically */
     z-index: 10;
-  }
+}
   
   .menu-link span {
     display: block;
@@ -30,10 +31,19 @@
     text-transform: uppercase;
   }
   
-  .menu-link img {
+.menu-link img {
+    display: block; /* Change to block to remove any extra spacing */
     mix-blend-mode: difference;
-  }
-  
+    height: 2rem; /* Keep your height */
+}
+
+.menu-link span:hover {
+  text-decoration: underline;
+  color: rgb(200, 200, 200); /* Slightly lighter color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  transition: color 0.3s ease, transform 0.3s ease; /* Ensure the transition is smooth */
+}
+
   .hover-reveal {
     position: absolute;
     width: 300px;
