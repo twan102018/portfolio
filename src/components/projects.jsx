@@ -6,6 +6,7 @@ import '../css/projects.css'; // Import the CSS file for styles
 const Projects = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
   const [hoverPos, setHoverPos] = useState({ x: 0 });
+  const [isHoveringAllowed, setIsHoveringAllowed] = useState(true); // Nieuwe state voor cooldown
 
   const menuItems = [
     { id: 'link1', title: 'Link 1', icon: "", img: projectimg1 },
@@ -14,8 +15,16 @@ const Projects = () => {
   ];
 
   const handleMouseMove = (e, index) => {
+    if (!isHoveringAllowed) return; // Als hover niet is toegestaan, doe niets
+
     setHoverIndex(index);
     setHoverPos({ x: e.clientX });
+
+    // Cooldown instellen
+    setIsHoveringAllowed(false);
+    setTimeout(() => {
+      setIsHoveringAllowed(true);
+    }, 300); // 1 seconde cooldown
   };
 
   const handleMouseLeave = () => {
@@ -24,7 +33,7 @@ const Projects = () => {
 
   return (
     <div id="menu-container">
-        <h1>PROJECTS</h1>
+      <h1>PROJECTS</h1>
       <div className="menu-list">
         {menuItems.map((item, index) => (
           <div key={item.id} className="menu-item">

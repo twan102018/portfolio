@@ -7,6 +7,8 @@ import Carousel from './components/carousel';
 import Horizontal from './components/horizontal';
 import Timeline from './components/timeline';
 import Projects from './components/projects';
+import Skills from './components/skills';
+import Socials from './components/aboutme';
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
       <Header />
       <Hero />
       <Carousel />
-      <Horizontal />
+      {/* <Horizontal /> */}
+      <Skills />
+      <Socials />
       <Timeline />
       <Projects />
       {/* Other components can be added here */}
