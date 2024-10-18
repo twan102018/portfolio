@@ -110,5 +110,9 @@
       object-fit: cover; /* Cover the entire container */
       object-position: 50% 25%; /* You can still adjust this for the image focus */
     }
+
+    .hero {
+      height: 60vh;
+    }
   }
   
