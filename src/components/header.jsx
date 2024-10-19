@@ -1,5 +1,6 @@
-import '../css/header.css';
+import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import '../css/header.css';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ function Header() {
     };
 
     window.addEventListener('resize', handleResize);
-    
+
     // Cleanup listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -30,7 +31,11 @@ function Header() {
   }, []);
 
   return (
-    <nav>
+    <motion.nav
+      initial={{ y: -200, opacity: 0 }} // Start above the viewport and invisible
+      animate={{ y: 0, opacity: 1 }} // End at its normal position, fully visible
+      transition={{ duration: 3 }} // Control the speed of the animation
+    >
       <div className="menu-icon" onClick={toggleMenu}>
         <div className={isOpen ? 'line open' : 'line'}></div>
         <div className={isOpen ? 'line open' : 'line'}></div>
@@ -45,7 +50,7 @@ function Header() {
           <button className="header-button">Contact</button>
         </li>
       </ul>
-    </nav>
+    </motion.nav>
   );
 }
 

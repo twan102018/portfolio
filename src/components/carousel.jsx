@@ -11,6 +11,9 @@ function Carousel() {
       {/* Add drag functionality to the card container */}
       <motion.div
         className="card-container"
+        initial={{ y: -100, opacity: 0 }} // Start above the viewport and invisible
+        animate={{ y: 0, opacity: 1 }} // End at its normal position, fully visible
+        transition={{ duration: 3 }} // Control the speed of the animation
         ref={scrollRef}
         drag="x"
         dragConstraints={{ right: 0, left: 0 }} // Adjust as needed based on number of cards

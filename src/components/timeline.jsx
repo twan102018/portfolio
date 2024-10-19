@@ -5,9 +5,8 @@ import '../css/timeline.css';
 const timelineData = [
   { id: 1, title: 'Begonnen Software Development', description: 'Na mijn vmbo-tl diploma gehaald te hebben ben ik de opleiding software development gaan volgen aan het Grafisch Lyceum Rotterdam', year: '2022' },
   { id: 2, title: '1e jaar software development', description: 'Ik heb dit jaar veel nieuwe dingen geleerd, hierbij heb ik de een introductie gekregen tot de talen Javascript, PHP en C#, verder heb ik ook kennis gemaakt met allerlij soorten werkprocessen.', year: '2023' },
-  { id: 3, title: '2e jaar software development', description: 'Dit jaar ', year: '2023' },
-  { id: 4, title: 'Developed a Personal Project', description: 'Curabitur lobortis sagittis.', year: '2024' },
-  { id: 5, title: 'Started First Internship At Triple Interactive B.V.', description: 'In mijn laatste jaar van school ben ik van start gegaan bij mijn 1e stageplek.', year: '2024' },
+  { id: 3, title: '2e jaar software development', description: 'Dit jaar heb ik vele nieuwe dingen geleerd waaronder kennisgemaakt met react, nextjs en firebase. Dit jaar ben ik ook aan de slag gegaan met veel CRUD applicaties.', year: '2023' },
+  { id: 4, title: '3e software development/Stage Triple Interactive B.V.', description: 'Dit jaar begon met mijn stage, het is namelijk de bedoeling dat je in je 3e jaar het hele jaar stage gaat lopen, dit betekent dus 40 uur in de week werken. Hier heb ik voornamelijk veel communicatieve skills weten te ontwikkelen en heb ik leren werken met Wordpress', year: '2024' },
 ];
 
 const Timeline = () => {

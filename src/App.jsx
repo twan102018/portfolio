@@ -18,7 +18,7 @@ function App() {
       <Carousel />
       {/* <Horizontal /> */}
       <Skills />
-      <Socials />
+      {/* <Socials /> */}
       <Timeline />
       <Projects />
       {/* Other components can be added here */}
