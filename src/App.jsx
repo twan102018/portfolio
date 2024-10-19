@@ -9,6 +9,7 @@ import Timeline from './components/timeline';
 import Projects from './components/projects';
 import Skills from './components/skills';
 import Socials from './components/aboutme';
+import { Contact } from './components/contact';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       {/* <Socials /> */}
       <Timeline />
       <Projects />
+      <Contact />
       {/* Other components can be added here */}
     </CursorProvider>
   );
