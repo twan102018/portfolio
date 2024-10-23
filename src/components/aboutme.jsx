@@ -14,7 +14,6 @@ export default function Socials() {
       </p>
       </div>
 
-      {/* Randomly Positioned Images */}
       <img 
         src={photo2}
         alt="Interior 1" 
