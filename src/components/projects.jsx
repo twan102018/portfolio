@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import projectimg1 from './img/1.jpg';
-import projectimg2 from './img/2.jpg';
-import arrow from './img/arrow.png';
+import projectimg1 from '../imgs/1.jpg';
+import projectimg2 from '../imgs/image.png';
+import arrow from '../imgs/arrow.png';
 import '../css/projects.css';
 
 const Projects = () => {
