@@ -1,10 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import App from "./App";
+import Project1 from "./components/pages/project1";
+import Header from "./components/header";
+import { CursorProvider } from "./hooks/CursorContext";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <CursorProvider>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/about" element={<Project1 />} />
+        </Routes>
+      </Router>
+    </CursorProvider>
   </React.StrictMode>
 );

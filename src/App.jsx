@@ -1,9 +1,7 @@
 import './App.css';
-import React, { useEffect } from 'react';
-import { CursorProvider } from './hooks/CursorContext'; // Import the provider
+import React, { useEffect } from 'react'; // Import React and useEffect
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Header from './components/header';
 import Hero from './components/hero';
 import Carousel from './components/carousel';
 import Horizontal from './components/horizontal';
@@ -22,19 +20,17 @@ function App() {
       once: false,     // Whether animation should happen only once
     });
   }, []);
+
   return (
-    <CursorProvider>
-      <Header />
+    <>
       <Hero />
       <Carousel />
-      {/* <Horizontal /> */}
       <Skills />
-      {/* <Socials /> */}
       <Timeline />
       <Projects />
       <Contact />
-      {/* Other components can be added here */}
-    </CursorProvider>
+      {/* <Horizontal /> */}
+    </>
   );
 }
 
