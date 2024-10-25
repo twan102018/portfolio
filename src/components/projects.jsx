@@ -36,7 +36,7 @@ const Projects = () => {
       <h1>PROJECTS</h1>
       <div className="menu-list">
         {menuItems.map((item, index) => (
-          <div key={item.id} className="menu-item">
+          <div key={item.id} className="menu-item" data-aos="fade-up">
             <a
               href={item.id}
               target="_blank"
