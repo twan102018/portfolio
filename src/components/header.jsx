@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import '../css/header.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,22 +10,18 @@ function Header() {
     setIsOpen(!isOpen);
   };
 
-  // Function to close the menu
   const closeMenu = () => {
     setIsOpen(false);
   };
 
-  // Handle window resize
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
-        closeMenu(); // Close the menu if the screen is wider than 768px
+        closeMenu();
       }
     };
 
     window.addEventListener('resize', handleResize);
-
-    // Cleanup listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -33,9 +29,9 @@ function Header() {
 
   return (
     <motion.nav
-      initial={{ y: -200, opacity: 0 }} // Start above the viewport and invisible
-      animate={{ y: 0, opacity: 1 }} // End at its normal position, fully visible
-      transition={{ duration: 3 }} // Control the speed of the animation
+      initial={{ y: -200, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 3 }}
     >
       <div className="menu-icon" onClick={toggleMenu}>
         <div className={isOpen ? 'line open' : 'line'}></div>
@@ -44,11 +40,10 @@ function Header() {
       </div>
 
       <ul className={isOpen ? 'nav-links open' : 'nav-links'}>
-      <li className="nav-li"><a href="#">      <Link to="/about">About</Link></a></li>
-        <li className="nav-li"><a href="#">Skills</a></li>
-        <li className="nav-li"><a href="#">Tijdlijn</a></li>
-        <li className="nav-li"><a href="#">Projecten</a></li>
-        
+        <li className="nav-li"><Link to="/about" className="link">About</Link></li>
+        <li className="nav-li"><Link to="/skills" className="link">Skills</Link></li>
+        <li className="nav-li"><Link to="/timeline" className="link">Tijdlijn</Link></li>
+        <li className="nav-li"><Link to="/projects" className="link">Projecten</Link></li>
         <li>
           <button className="header-button">Contact</button>
         </li>

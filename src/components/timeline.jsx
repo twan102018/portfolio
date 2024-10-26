@@ -44,7 +44,7 @@ const Timeline = () => {
   }, []);
 
   return (
-    <div className="timeline-container" ref={timelineRef}>
+    <div className="timeline-container" ref={timelineRef} id='timeline'>
       <div className="timeline-progress-bar">
         <motion.div
           className="timeline-progress-indicator"

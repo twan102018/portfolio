@@ -5,6 +5,7 @@ import App from "./App";
 import Project1 from "./components/pages/project1";
 import Header from "./components/header";
 import { CursorProvider } from "./hooks/CursorContext";
+import Timeline from "./components/timeline";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,6 +15,7 @@ root.render(
         <Header />
         <Routes>
           <Route path="/" element={<App />} />
+          <Route path="/timeline" element={<Timeline />} />
           <Route path="/about" element={<Project1 />} />
         </Routes>
       </Router>

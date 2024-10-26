@@ -48,6 +48,18 @@ nav > ul {
     transition-timing-function: ease-in-out;
 }
 
+.nav-li > a > .link {
+    color: var(--white); /* Main link color */
+    font-size: 1.3rem;
+    font-weight: 600;
+    opacity: 0.8; /* Higher opacity for visibility */
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.nav-li > a > .link:hover {
+    color: #a0a0a0; /* Brighter hover color */
+}
 /* Set hover color for normal menu links */
 .nav-li > a:hover {
     color: #a0a0a0; /* Brighter hover color */
@@ -157,11 +169,6 @@ a {
         color: var(--white); /* Maintain normal link color */
         opacity: 0.8; /* Consistent opacity */
         transition: color 0.5s ease; /* Transition for hover effect */
-    }
-
-    /* Set hover color for dropdown links */
-    .nav-li > a:hover {
-        color: #f2febc; /* Use the hover color for dropdown links */
     }
 
     .menu-icon {

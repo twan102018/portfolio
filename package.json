@@ -9,6 +9,7 @@
     "aos": "^2.3.4",
     "boxicons": "^2.1.4",
     "framer-motion": "^11.9.0",
+    "gsap": "^3.12.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0",
