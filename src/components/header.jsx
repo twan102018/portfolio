@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import '../css/header.css';
-import { Link } from 'react-router-dom';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,10 +39,10 @@ function Header() {
       </div>
 
       <ul className={isOpen ? 'nav-links open' : 'nav-links'}>
-        <li className="nav-li"><Link to="/about" className="link">About</Link></li>
-        <li className="nav-li"><Link to="/skills" className="link">Skills</Link></li>
-        <li className="nav-li"><Link to="/timeline" className="link">Tijdlijn</Link></li>
-        <li className="nav-li"><Link to="/projects" className="link">Projecten</Link></li>
+        <li className="nav-li"><a href="#about">About</a></li>
+        <li className="nav-li"><a href="#skills">Skills</a></li>
+        <li className="nav-li"><a href="#tijdlijn">Tijdlijn</a></li>
+        <li className="nav-li"><a href="#projecten">Projecten</a></li>
         <li>
           <button className="header-button">Contact</button>
         </li>

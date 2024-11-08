@@ -4,6 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Hero from './components/hero';
 import Carousel from './components/carousel';
+import Header from "./components/header";
 import Horizontal from './components/horizontal';
 import Timeline from './components/timeline';
 import Projects from './components/projects';
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <>
+            <Header />
       <Hero />
       <Carousel />
       <Skills />

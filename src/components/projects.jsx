@@ -3,16 +3,18 @@ import projectimg1 from '../imgs/1.jpg';
 import projectimg2 from '../imgs/image.png';
 import arrow from '../imgs/arrow.png';
 import '../css/projects.css';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
   const [hoverPos, setHoverPos] = useState({ x: 0 });
   const [isHoveringAllowed, setIsHoveringAllowed] = useState(true);
 
+  // Assuming these are internal routes in your React application
   const menuItems = [
-    { id: 'http://localhost:3000/', title: 'Netflix', icon: arrow, img: projectimg1 },
-    { id: 'http://localhost:3001/', title: 'Spotify', icon: arrow, img: projectimg2 },
-    { id: 'http://localhost:3002/', title: 'Talk2Y', icon: arrow, img: projectimg1 }
+    { id: '/netflix', title: 'Netflix', icon: arrow, img: projectimg1 },
+    { id: '/spotify', title: 'Spotify', icon: arrow, img: projectimg2 },
+    { id: '/talk2y', title: 'Talk2Y', icon: arrow, img: projectimg1 }
   ];
 
   const handleMouseMove = (e, index) => {
@@ -37,17 +39,15 @@ const Projects = () => {
       <div className="menu-list">
         {menuItems.map((item, index) => (
           <div key={item.id} className="menu-item" data-aos="fade-up">
-            <a
-              href={item.id}
-              target="_blank"
-              rel="noopener noreferrer" // For security reasons
+            <Link
+              to={item.id}
               className="menu-link"
               onMouseMove={(e) => handleMouseMove(e, index)}
               onMouseLeave={handleMouseLeave}
             >
               <span>{item.title}</span>
               <img src={item.icon} alt={`Icon ${index + 1}`} />
-            </a>
+            </Link>
 
             <div
               className="hover-reveal"
