@@ -44,6 +44,7 @@
   .hero-subtitle {
     font-size: 1.25rem; /* Subtitle size */
     margin-bottom: 1.5rem; /* Bottom spacing */
+    width: 90%;
   }
   
   .button-group {
