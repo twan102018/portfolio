@@ -18,11 +18,10 @@
   color: var(--light-grey);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: transform 1s; /* Add this */
 }
 
 .plan:hover {
-  transform: translateY(-1vh);
+  transform: translateY(-1rem);
   transition: 1s;
 }
 

@@ -6,7 +6,13 @@ export default function Skills() {
   return (
     <section className="plans">
       <div className="pricing-plans">
-        <div className="plan" onMouseEnter={textEnter} onMouseLeave={textLeave} data-aos="fade-up"           data-aos-delay="300">
+        <div
+          className="plan"
+          onMouseEnter={textEnter}
+          onMouseLeave={textLeave}
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <h3>Frameworks & Libraries</h3>
           <p className="description">Frameworks waar ik ervaring mee heb.</p>
           <ul className="features">
@@ -62,7 +68,13 @@ export default function Skills() {
           </ul>
         </div>
 
-        <div className="plan" onMouseEnter={textEnter} onMouseLeave={textLeave} data-aos="fade-up"           data-aos-delay="300">
+        <div
+          className="plan"
+          onMouseEnter={textEnter}
+          onMouseLeave={textLeave}
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <h3>Databases</h3>
           <p className="description">Databases waar ik ervaring mee heb.</p>
           <ul className="features">
