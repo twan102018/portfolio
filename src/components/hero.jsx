@@ -23,7 +23,7 @@ function Hero() {
           </span>
         </h2>
         <h3 className="hero-subtitle">
-          Hey, hallo mijn naam is Twan
+          Hey, hallo mijn naam is Twan, momenteel 18 jaar oud en student software development.
         </h3>
 
         <div className="button-group">
