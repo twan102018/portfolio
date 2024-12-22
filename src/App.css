@@ -39,7 +39,7 @@ h1, h2, h3 {
 }
 
 .cursor {
-  position: fixed; /* Keeps the cursor within the viewport */
+  position: fixed; /* Ensure cursor stays within the viewport */
   top: 0;
   left: 0;
   width: 32px;
@@ -58,10 +58,9 @@ h1, h2, h3 {
 
 @media screen and (max-width: 992px) {
   .cursor {
-    display: none; /* Hide on smaller screens */
+    display: none; /* Hide the custom cursor on smaller screens */
   }
 }
-
 
 
 /* a{
