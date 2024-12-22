@@ -7,13 +7,15 @@
   --full-black: #000;
   --light-grey: #d6d6d6;
   --hover-dark: #7c7c7c;
-  --accent-color: #ff5722; /* Vibrant accent color */
-  --dark-bg: #181818; /* Slightly different from off-black */
-  --light-bg: #2b2b2b; /* Lighter grey for contrast */
+  --accent-color: #ff5722;
+  --dark-bg: #181818;
+  --light-bg: #2b2b2b;
 }
-*{
+
+* {
   cursor: none;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -23,9 +25,11 @@ body {
   cursor: none;
   overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
+
 h1, h2, h3 {
   color: var(--white);
   letter-spacing: 2px;
@@ -35,7 +39,7 @@ h1, h2, h3 {
 }
 
 .cursor {
-  position: absolute;
+  position: fixed; /* Ensure cursor stays within the viewport */
   top: 0;
   left: 0;
   width: 32px;
@@ -48,19 +52,20 @@ h1, h2, h3 {
   will-change: transform;
 }
 
+.cursor-follow {
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 992px) {
+  .cursor {
+    display: none; /* Hide the custom cursor on smaller screens */
+  }
+}
+
+
 /* a{
   cursor: none;
 }
 button{
   cursor: none;
 } */
-
-.cursor-follow {
-  transform: scale(1.5);
-}
-
-@media screen and (max-width: 992px) {
-  .cursor{
-    display: none;
-  }
-}

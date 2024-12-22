@@ -1,6 +1,4 @@
-// src/hooks/useCustomCursor.js
 import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
 
 const useCustomCursor = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
