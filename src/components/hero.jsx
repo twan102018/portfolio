@@ -23,7 +23,7 @@ function Hero() {
           </span>
         </h2>
         <h3 className="hero-subtitle">
-          Hey, hallo mijn naam is Twan en ik werk met pixels
+          Hey, hallo mijn naam is Twan
         </h3>
 
         <div className="button-group">
