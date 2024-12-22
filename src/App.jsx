@@ -5,7 +5,6 @@ import 'aos/dist/aos.css';
 import Hero from './components/hero';
 import Carousel from './components/carousel';
 import Header from "./components/header";
-import Horizontal from './components/horizontal';
 import Timeline from './components/timeline';
 import Projects from './components/projects';
 import Skills from './components/skills';
