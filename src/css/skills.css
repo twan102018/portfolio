@@ -21,7 +21,7 @@
 }
 
 .plan:hover {
-  transform: translateY(-1rem);
+  transform: translateY(-1vh);
   transition: 1s;
 }
 
