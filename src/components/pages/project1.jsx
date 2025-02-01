@@ -3,7 +3,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./styles.css";
 import eImage from "./e.jpg";
-import imgImage from "./image.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -99,44 +98,32 @@ const Project1 = () => {
         </div>
         <div className="project1-content-holder">
           <div className="project1-row">
-            <h1>Project 1</h1>
-          </div>
-
-          <div className="project1-row">
-            <div className="project1-img">
-              <img src={imgImage} alt="Gallery item" />
-            </div>
-          </div>
-          <div className="project1-row">
-            <div className="project1-img">
-              <img src={imgImage} alt="Gallery item" />
-            </div>
-          </div>
-          <div className="project1-row">
-            <div className="project1-img">
-              <img src={imgImage} alt="Gallery item" />
-            </div>
-          </div>
-          <div className="project1-row">
+            <h1>Introductie</h1>
             <p>
               Voor dit project heb ik een Netflix-applicatie gebouwd met een
               login- en registratie-systeem, gerealiseerd met behulp van
-              Firebase. Daarnaast heb ik filmgegevens opgehaald uit een
+              Firebase. Verder heb ik filmgegevens opgehaald uit een
               film-database API. Het project is gebouwd met het React-framework
               en maakt gebruik van de programmeertalen JavaScript en CSS.
             </p>
           </div>
+
           <div className="project1-row">
-            <p>
-              Met deze applicatie kunnen gebruikers een account aanmaken en
-              inloggen. Na inloggen verschijnt een hero-carousel met populaire
-              films, verkregen uit de API. Verder toont de website een breed
-              aanbod van films en series. Bij het klikken op een film of serie
-              opent er een modaal menu waarin je verschillende afleveringen kunt
-              bekijken, evenals aanbevelingen voor vergelijkbare films en
-              series. Ook is hier de trailer beschikbaar.
-            </p>
+            <h1>Functionaliteiten</h1>
+              <ul>
+                <li>Login/Register</li>
+                <li>Categorien</li>
+                <li>Trending carousel</li>
+                <li>Modal menu w/recommendations</li>
+                <li>Modal menu w/episode listing</li>
+
+              </ul>
           </div>
+          <div className="project1-row">
+            <h1>Zelf bekijken?</h1>
+              <a href="https://netflix-roan-theta.vercel.app/">Klik Hier</a>
+          </div>
+
         </div>
       </div>
     </div>

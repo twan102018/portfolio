@@ -34,7 +34,7 @@ const Projects = () => {
   };
 
   return (
-    <div id="menu-container">
+    <div id="menu-container-projects">
       <h1>PROJECTS</h1>
       <div className="menu-list">
         {menuItems.map((item, index) => (

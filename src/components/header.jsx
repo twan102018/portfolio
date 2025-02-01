@@ -39,10 +39,10 @@ function Header() {
       </div>
 
       <ul className={isOpen ? 'nav-links open' : 'nav-links'}>
-        <li className="nav-li"><a href="#about">About</a></li>
-        <li className="nav-li"><a href="#skills">Skills</a></li>
-        <li className="nav-li"><a href="#tijdlijn">Tijdlijn</a></li>
-        <li className="nav-li"><a href="#projecten">Projecten</a></li>
+        <li className="nav-li"><a href="localhost:3000#about">About</a></li>
+        <li className="nav-li"><a href="localhost:3000#skills">Skills</a></li>
+        <li className="nav-li"><a href="http://localhost:3000/#timeline">Tijdlijn</a></li>
+        <li className="nav-li"><a href="localhost:3000#projecten">Projecten</a></li>
         <li>
           <button className="header-button">Contact</button>
         </li>
