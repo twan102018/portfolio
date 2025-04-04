@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Accordion</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #0d0d0d;
+            overflow: hidden;
+        }
+        .accordion {
+            display: flex;
+            gap: 10px;
+            width: 80vw;
+        }
+        .panel {
+            flex: 1;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            transition: flex 0.5s ease;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        .panel:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="accordion">
+        <div class="panel" data-index="0">Item 1</div>
+        <div class="panel" data-index="1">Item 2</div>
+        <div class="panel" data-index="2">Item 3</div>
+        <div class="panel" data-index="3">Item 4</div>
+    </div>
+    
+    <script>
+        const panels = document.querySelectorAll('.panel');
+        panels.forEach(panel => {
+            panel.addEventListener('mouseenter', () => {
+                gsap.to(panels, { flex: 1, duration: 0.5 });
+                gsap.to(panel, { flex: 3, duration: 0.5 });
+            });
+        });
+    </script>
+</body>
+</html>
