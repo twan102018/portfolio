@@ -19,11 +19,11 @@ function Hero() {
       >
         <h2 className="hero-title">
           <span className="span-hero">
-            I'm an 18 year old software developer{" "}
+            I'm an 19 year old student{" "}
           </span>
         </h2>
         <h3 className="hero-subtitle">
-          Hey, hallo mijn naam is Twan, momenteel 18 jaar oud en student software development.
+          Hello my name is Twan, currently a first year studying at the Hogeschool Rotterdam.
         </h3>
 
         <div className="button-group">
